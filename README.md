@@ -24,7 +24,7 @@ Technologies Used
 *   **Asynchronous Programming**: Utilized for handling I/O-bound operations efficiently.
 *   **Environment Variables**: Managed using `dotenv` for configuration settings.
 *   **SQL**: For database interactions and queries.
-*   **Fetch API**: For making HTTP requests to third-party services.
+*   **API Integration**: For making HTTP requests to third-party services.
 *   **Error Handling**: Implemented to manage errors and ensure the robustness of the application.
 *   **Logging**: For tracking and debugging the process.
 *   **Middleware Extension**: Custom middleware for request validation and error handling.
