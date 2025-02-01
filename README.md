@@ -34,12 +34,12 @@ Features
 --------
 
 *   **Automated Data Ingestion**: Continuously monitors and ingests live scan and alert data.
-*   **Integration with Third-Party Services**: Utilizes the Fetch API for geocoding services.
+*   **Integration with Third-Party Services**: Utilizes API integration for geocoding services.
 *   **Advanced Error Handling**: Custom error classes and middleware for robust error management.
 *   **Asynchronous Operations**: Efficient handling of I/O-bound operations.
 *   **Modular Architecture**: Organized code structure for maintainability and scalability.
 *   **Comprehensive Logging**: Detailed logging for tracking and debugging.
-*   **Email Notifications**: Sends email notifications for critical errors.
+*   **Email Notifications**: Sends notifications for critical errors.
 
 Project Structure
 -----------------
@@ -248,4 +248,4 @@ Your Name
 License
 -------
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the GNU General Public License. See the `LICENSE` file for details.
