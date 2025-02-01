@@ -1,0 +1,24 @@
+{
+  "name": "webhook",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./src/app.js",
+    "test": "node ./test/testserver.js"
+  },
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.4",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "mssql": "^11.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.12.0",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "prettier-eslint": "^16.3.0"
+  }
+}
