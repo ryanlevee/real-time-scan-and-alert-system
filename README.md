@@ -114,7 +114,7 @@ Getting Started
 
 1.  Clone the repository:
     
-        git clone https://github.com/yourusername/real-time-scan-and-alert-system.git
+        git clone https://github.com/ryanlevee/real-time-scan-and-alert-system.git
         
     
 2.  Navigate to the project directory:
