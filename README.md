@@ -4,7 +4,7 @@ Real-Time Scan and Alert System
 Overview
 --------
 
-This Real-Time Scan and Alert System is a comprehensive program designed to automate the processing and management of live scan and alert data. This project showcases advanced techniques in middleware extension, error handling, and data processing, making it a robust and effective tool for various industries that require real-time data monitoring and management.
+This is a comprehensive program designed to automate the processing and management of live scan and alert data. It showcases advanced techniques in middleware extension, error handling, and data processing, making it a robust and effective tool for various industries that require real-time data monitoring and management.
 
 ### Key Functions:
 
