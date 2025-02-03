@@ -11,8 +11,8 @@ This is a comprehensive program designed to automate the processing and manageme
 1.  **Data Ingestion**: Continuously monitors incoming data for live scans and alerts.
 2.  **Data Processing**: Validates and processes incoming data, including geocoding and payload validation.
 3.  **Database Interaction**: Updates the SQL database with processed data.
-4.  **Error Handling**: Implements advanced error handling and logging mechanisms.
-5.  **Middleware Extension**: Extends Express' built-in middleware for improved request validation and error handling.
+4.  **Middleware Extension**: Extends Express' built-in middleware for improved request validation and error handling.
+5.  **Error Handling**: Implements advanced error handling and logging mechanisms.
 
 This system ensures that real-time scan and alert data is accurately captured, processed, and stored, facilitating efficient data management and operational efficiency.
 
