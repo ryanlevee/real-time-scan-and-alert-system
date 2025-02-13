@@ -4,15 +4,15 @@ Real-Time Scan and Alert System
 Overview
 --------
 
-This Real-Time Scan and Alert System is a comprehensive program designed to automate the processing and management of live scan and alert data. This project showcases advanced techniques in middleware extension, error handling, and data processing, making it a robust and essential tool for various industries that require real-time data monitoring and management.
+This is a comprehensive program designed to automate the processing and management of live scan and alert data. It showcases advanced techniques in middleware extension, error handling, and data processing, making it a robust and effective tool for various industries that require real-time data monitoring and management.
 
 ### Key Functions:
 
 1.  **Data Ingestion**: Continuously monitors incoming data for live scans and alerts.
 2.  **Data Processing**: Validates and processes incoming data, including geocoding and payload validation.
 3.  **Database Interaction**: Updates the SQL database with processed data.
-4.  **Error Handling**: Implements advanced error handling and logging mechanisms.
-5.  **Middleware Extension**: Enhances Express middleware for improved request validation and error handling.
+4.  **Middleware Extension**: Extends Express' built-in middleware for improved request validation and error handling.
+5.  **Error Handling**: Implements advanced error handling and logging mechanisms.
 
 This system ensures that real-time scan and alert data is accurately captured, processed, and stored, facilitating efficient data management and operational efficiency.
 
@@ -24,7 +24,7 @@ Technologies Used
 *   **Asynchronous Programming**: Utilized for handling I/O-bound operations efficiently.
 *   **Environment Variables**: Managed using `dotenv` for configuration settings.
 *   **SQL**: For database interactions and queries.
-*   **Fetch API**: For making HTTP requests to third-party services.
+*   **API Integration**: For making requests to third-party services.
 *   **Error Handling**: Implemented to manage errors and ensure the robustness of the application.
 *   **Logging**: For tracking and debugging the process.
 *   **Middleware Extension**: Custom middleware for request validation and error handling.
@@ -34,12 +34,12 @@ Features
 --------
 
 *   **Automated Data Ingestion**: Continuously monitors and ingests live scan and alert data.
-*   **Integration with Third-Party Services**: Utilizes the Fetch API for geocoding services.
+*   **Integration with Third-Party Services**: Utilizes API integration for geocoding services.
 *   **Advanced Error Handling**: Custom error classes and middleware for robust error management.
 *   **Asynchronous Operations**: Efficient handling of I/O-bound operations.
 *   **Modular Architecture**: Organized code structure for maintainability and scalability.
 *   **Comprehensive Logging**: Detailed logging for tracking and debugging.
-*   **Email Notifications**: Sends email notifications for critical errors.
+*   **Email Notifications**: Sends notifications for critical errors.
 
 Project Structure
 -----------------
@@ -114,7 +114,7 @@ Getting Started
 
 1.  Clone the repository:
     
-        git clone https://github.com/yourusername/real-time-scan-and-alert-system.git
+        git clone https://github.com/ryanlevee/real-time-scan-and-alert-system.git
         
     
 2.  Navigate to the project directory:
@@ -146,7 +146,7 @@ Here's a brief example of how the software works:
 1.  The program monitors incoming data for live scans and alerts.
 2.  When new data is detected, it processes the data, including geocoding and payload validation.
 3.  The processed data is then updated in the SQL database.
-4.  Any errors encountered during processing are logged and managed appropriately.
+4.  Any errors encountered during processing are sent through a comprehensive flow.
 
 Technical Details
 -----------------
@@ -248,4 +248,4 @@ Your Name
 License
 -------
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the GNU General Public License. See the `LICENSE` file for details.
