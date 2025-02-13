@@ -90,7 +90,7 @@ const schemas = {
         media_coverage: sql.NVarChar(sql.MAX),
         ip_address: sql.NVarChar(50),
     },
-    liveAlertUtilities: {
+    liveAlertOperations: {
         event_id: sql.NVarChar(50),
         record_id: sql.Int(),
         type: sql.NVarChar(50),

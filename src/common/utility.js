@@ -54,7 +54,6 @@ export class Utl {
         const firstKeys = lst.slice(0, neg);
         const lastKeys = lst.slice(neg);
         return [...firstKeys, ...lastKeys.map(k => k.split(char)).flat()];
-        // return lst.map(k => k.split(char)).flat();
     }
 
     static getFlatKeyList(obj) {

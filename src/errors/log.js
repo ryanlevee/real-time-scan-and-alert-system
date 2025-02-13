@@ -1,5 +1,5 @@
 import { Utl } from "../common/utility.js";
-import { Controller } from "../controllers/controllers.js";
+import { Controller } from "../controllers/controller.js";
 import { ErrorHolder } from "../storage/holders.js";
 
 

@@ -8,16 +8,16 @@ class SqlService {
     }
 
     #setSqlObject = item => {
-        const type = this.#_getType(item);
-        const data = this.#_getData(item);
-        return { [type]: this.#_sqlizeData(data) };
+        const type = this.#getType(item);
+        const data = this.#getData(item);
+        return { [type]: this.#sqlizeData(data) };
     };
 
-    #_getType = item => Object.keys(item)[0]
+    #getType = item => Object.keys(item)[0]
 
-    #_getData = item => Object.values(item)[0]
+    #getData = item => Object.values(item)[0]
 
-    #_sqlizeData(data) {
+    #sqlizeData(data) {
         const values = Object.values(data);
         const keys = Object.keys(data);
         Utl.sqlizeDates(values, keys);
