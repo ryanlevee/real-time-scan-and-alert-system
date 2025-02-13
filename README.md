@@ -69,19 +69,18 @@ The project leverages several Object-Oriented Programming (OOP) design patterns 
     
     *   **Usage**: Different strategies are implemented for handling `LiveScan` and `LiveAlert` payloads. The `PayloadContext` class dynamically selects the appropriate strategy based on the path.
     *   **Example**: `LiveScanStrategy` and `LiveAlertStrategy` classes implement specific logic for handling their respective payloads.
+
 2.  **Factory Pattern**:
     
     *   **Usage**: The `PayloadContext` class acts as a factory to instantiate the appropriate strategy based on the path.
     *   **Example**: The constructor of `PayloadContext` selects and initializes the correct strategy (`LiveScanStrategy` or `LiveAlertStrategy`).
+
 3.  **Template Method Pattern**:
     
     *   **Usage**: The `PayloadStrategy` base class defines the skeleton of the payload processing algorithm, deferring specific steps to subclasses.
     *   **Example**: Methods like `getFieldList`, `navigateFields`, and `addDataToObj` are defined in `PayloadStrategy` and implemented in `LiveScanStrategy` and `LiveAlertStrategy`.
-4.  **Decorator Pattern**:
-    
-    *   **Usage**: Middleware functions in Express act as decorators, adding functionality to the request handling process.
-    *   **Example**: Custom middleware functions validate HTTP methods, paths, and request bodies, and handle errors.
-5.  **Chain of Responsibility Pattern**:
+
+4.  **Chain of Responsibility Pattern**:
     
     *   **Usage**: Middleware functions in Express form a chain of responsibility, where each function processes the request and either handles it or passes it to the next middleware in the chain.
     *   **Example**: Middleware functions for request validation and error handling.
