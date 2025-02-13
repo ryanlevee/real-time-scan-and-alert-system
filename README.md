@@ -235,56 +235,55 @@ Email notifications are sent for critical errors using the SendGrid API. This en
 
 Modules
 -------
-
-### `src/app.js`
+#### `src/app.js`
 
 Main application file that sets up the Express server and routes.
 
-### `src/bookends/`
+#### `src/bookends/`
 
 Contains middleware for the beginning and end of request processing.
 
-### `src/common/`
+#### `src/common/`
 
 Common utility functions and constants used throughout the project.
 
-### `src/controllers/`
+#### `src/controllers/`
 
 Controllers for handling business logic and orchestrating operations.
 
-### `src/email/`
+#### `src/email/`
 
 Email notification functionality using SendGrid.
 
-### `src/errors/`
+#### `src/errors/`
 
 Error handling classes and functions to manage and log errors.
 
-### `src/extenders/`
+#### `src/extenders/`
 
 Middleware extenders for additional functionality.
 
-### `src/handlers/`
+#### `src/handlers/`
 
 Handlers for specific operations such as SQL queries.
 
-### `src/middleware/`
+#### `src/middleware/`
 
 Middleware for request validation and processing.
 
-### `src/models/`
+#### `src/models/`
 
 Database models and schemas for interacting with the SQL database.
 
-### `src/routes/`
+#### `src/routes/`
 
 API routes for handling HTTP requests.
 
-### `src/services/`
+#### `src/services/`
 
 Services for processing data, including geocoding and payload validation.
 
-### `src/storage/`
+#### `src/storage/`
 
 Data storage and management classes.
 
