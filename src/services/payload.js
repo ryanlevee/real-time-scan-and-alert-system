@@ -1,6 +1,6 @@
 import { Utl } from '../common/utility.js';
 import { DataHolder } from '../storage/holders.js';
-import * as strategies from './strategies/index.js';
+import * as strategies from './strategies/payload/index.js';
 
 
 class PayloadService {

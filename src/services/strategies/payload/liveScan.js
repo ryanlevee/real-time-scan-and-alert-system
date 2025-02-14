@@ -1,4 +1,4 @@
-import { payloadFields } from '../../common/payloadFields.js';
+import { payloadFields } from '../../../common/payloadFields.js';
 import { PayloadStrategy } from './payload.js';
 
 

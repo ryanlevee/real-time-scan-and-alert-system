@@ -1,5 +1,5 @@
-import { payloadFields } from '../../common/payloadFields.js';
-import * as errs from '../../errors/classes/payload.js';
+import { payloadFields } from '../../../common/payloadFields.js';
+import * as errs from '../../../errors/classes/payload.js';
 import { PayloadStrategy } from './payload.js';
 
 
