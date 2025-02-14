@@ -40,6 +40,58 @@ Features
 *   **Modular Architecture**: Organized code structure for maintainability and scalability.
 *   **Comprehensive Logging**: Detailed logging for tracking and debugging.
 *   **Email Notifications**: Sends notifications for critical errors.
+*   **Strategy Pattern Implementation**: Uses the Strategy Pattern to handle different types of payloads for `LiveScan` and `LiveAlert`.
+
+Technical Details
+-----------------
+
+### Middleware Extension
+
+The project extends Express middleware to enhance request validation and error handling. Custom middleware functions are used to validate HTTP methods, paths, and request bodies, ensuring that only valid data is processed.
+
+### Error Handling
+
+Advanced error handling is implemented using custom error classes and middleware. Errors are categorized and handled based on their type, with specific responses and logging mechanisms in place. Critical errors trigger email notifications for immediate awareness.
+
+### Data Processing
+
+Data processing involves several steps:
+
+1.  **Payload Validation**: Incoming data is validated against predefined schemas to ensure it meets the required format.
+2.  **Geocoding**: The Fetch API is used to make HTTP requests to the OpenStreetMap Nominatim service for reverse geocoding.
+3.  **Database Interaction**: Processed data is updated in the SQL database using parameterized queries to prevent SQL injection.
+
+### Design Patterns
+
+The project leverages several Object-Oriented Programming (OOP) design patterns to enhance modularity, maintainability, and scalability:
+
+1.  **Strategy Pattern**:
+    
+    *   **Usage**: Different strategies are implemented for handling `LiveScan` and `LiveAlert` payloads. The `PayloadContext` class dynamically selects the appropriate strategy based on the path.
+    *   **Example**: `LiveScanStrategy` and `LiveAlertStrategy` classes implement specific logic for handling their respective payloads.
+
+2.  **Factory Pattern**:
+    
+    *   **Usage**: The `PayloadContext` class acts as a factory to instantiate the appropriate strategy based on the path.
+    *   **Example**: The constructor of `PayloadContext` selects and initializes the correct strategy (`LiveScanStrategy` or `LiveAlertStrategy`).
+
+3.  **Template Method Pattern**:
+    
+    *   **Usage**: The `PayloadStrategy` base class defines the skeleton of the payload processing algorithm, deferring specific steps to subclasses.
+    *   **Example**: Methods like `getFieldList`, `navigateFields`, and `addDataToObj` are defined in `PayloadStrategy` and implemented in `LiveScanStrategy` and `LiveAlertStrategy`.
+
+4.  **Chain of Responsibility Pattern**:
+    
+    *   **Usage**: Middleware functions in Express form a chain of responsibility, where each function processes the request and either handles it or passes it to the next middleware in the chain.
+    *   **Example**: Middleware functions for request validation and error handling.
+
+### Logging
+
+Comprehensive logging is implemented to track the flow of data and capture any errors or anomalies. Logs are stored in a structured format for easy analysis and debugging.
+
+### Email Notifications
+
+Email notifications are sent for critical errors using the SendGrid API. This ensures that any significant issues are promptly reported and can be addressed in a timely manner.
 
 Project Structure
 -----------------
@@ -98,6 +150,12 @@ The project is organized into the following files and directories:
     *   `index.js`
     *   `payload.js`
     *   `sql.js`
+    *   `strategies/`
+        *   `context.js`
+        *   `index.js`
+        *   `liveAlert.js`
+        *   `liveScan.js`
+        *   `payload.js`
 *   `src/storage/`: Data storage and management.
     *   `holders.js`
     *   `stores.js`
@@ -128,7 +186,6 @@ Getting Started
         
     
 4.  Set up environment variables in a `.env` file based on the provided `config/.env.example`.
-    
 
 Usage
 -----
@@ -177,7 +234,6 @@ Email notifications are sent for critical errors using the SendGrid API. This en
 
 Modules
 -------
-
 #### `src/app.js`
 
 Main application file that sets up the Express server and routes.
