@@ -3,9 +3,7 @@ Real-Time Scan and Alert System
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Live Demo:** [**https://alertsystemreact.netlify.app/**](https://alertsystemreact.netlify.app/)
-
-**Related Project:** This UI complements the conceptual backend system: [Real-Time Scan and Alert System (GitHub)](https://github.com/ryanlevee/real-time-scan-and-alert-system)
+**Related Project:** This project complements the "Alert System UI" frontend: [Alert System UI (GitHub)](https://github.com/ryanlevee/alert-system-ui)
 
 Overview
 --------
