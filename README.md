@@ -296,12 +296,13 @@ Credits
 
 This project includes code for geocoding from OpenStreetMap.
 
-Author
-------
-
-Your Name
 
 License
 -------
 
 This project is licensed under the GNU General Public License. See the `LICENSE` file for details.
+
+
+## Contact
+
+Ryan Levee - [GitHub](https://github.com/ryanlevee) | [LinkedIn](https://www.linkedin.com/in/ryanlevee/) | [Email](mailto:ryanlevee@gmail.com)
