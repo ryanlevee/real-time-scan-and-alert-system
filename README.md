@@ -1,6 +1,12 @@
 Real-Time Scan and Alert System
 ===============================
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**Live Demo:** [**https://alertsystemreact.netlify.app/**](https://alertsystemreact.netlify.app/)
+
+**Related Project:** This UI complements the conceptual backend system: [Real-Time Scan and Alert System (GitHub)](https://github.com/ryanlevee/real-time-scan-and-alert-system)
+
 Overview
 --------
 
@@ -297,11 +303,9 @@ Credits
 This project includes code for geocoding from OpenStreetMap.
 
 
-License
--------
+## License
 
-This project is licensed under the GNU General Public License. See the `LICENSE` file for details.
-
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/ryanlevee/real-time-scan-and-alert-system/blob/main/LICENSE) file for details.
 
 ## Contact
 
