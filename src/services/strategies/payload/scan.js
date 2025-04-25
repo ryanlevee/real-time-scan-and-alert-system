@@ -2,10 +2,10 @@ import { payloadFields } from '../../../common/payloadFields.js';
 import { PayloadStrategy } from './payload.js';
 
 
-class LiveScanStrategy extends PayloadStrategy {
+class ScanStrategy extends PayloadStrategy {
     getFieldList() {
-        return payloadFields.LiveScan.split(', ');
+        return payloadFields.Scan.split(', ');
     }
 }
 
-export { LiveScanStrategy as Strategy };
+export { ScanStrategy as Strategy };

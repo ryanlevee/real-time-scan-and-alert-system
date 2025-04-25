@@ -2,7 +2,7 @@ import sql from 'mssql';
 
 
 const schemas = {
-    liveScan: {
+    scan: {
         scan_id: sql.BigInt(),
         event_id: sql.NVarChar(50),
         record_id: sql.Int(),
@@ -21,7 +21,7 @@ const schemas = {
         ip_address: sql.NVarChar(50),
         display_name: sql.NVarChar(sql.MAX),
     },
-    liveAlertSafety: {
+    alertSafety: {
         event_id: sql.NVarChar(50),
         record_id: sql.Int(),
         type: sql.NVarChar(50),
@@ -50,7 +50,7 @@ const schemas = {
         media_coverage: sql.NVarChar(sql.MAX),
         ip_address: sql.NVarChar(50),
     },
-    liveAlertWeather: {
+    alertWeather: {
         event_id: sql.NVarChar(50),
         record_id: sql.Int(),
         type: sql.NVarChar(50),
@@ -90,7 +90,7 @@ const schemas = {
         media_coverage: sql.NVarChar(sql.MAX),
         ip_address: sql.NVarChar(50),
     },
-    liveAlertOperations: {
+    alertOperations: {
         event_id: sql.NVarChar(50),
         record_id: sql.Int(),
         type: sql.NVarChar(50),
@@ -124,7 +124,7 @@ const schemas = {
         media_coverage: sql.NVarChar(sql.MAX),
         ip_address: sql.NVarChar(50),
     },
-    liveAlertDisaster: {
+    alertDisaster: {
         event_id: sql.NVarChar(50),
         record_id: sql.Int(),
         type: sql.NVarChar(50),

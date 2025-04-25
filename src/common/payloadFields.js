@@ -1,7 +1,7 @@
 const payloadFields = {
-    LiveScan:
+    Scan:
         'scan_id, event_id, record_id, scan_date, latitude, longitude, location_description, scan_type, scan_status, scanned_by, scan_results, associated_alerts, weather_conditions, traffic_conditions, equipment_type',
-    LiveAlert: {
+    Alert: {
         Safety: 'record_id, type, description, status, event_id, event_date, event_location, latitude, longitude, severity_level, reported_by, report_date, casualties, injuries, evacuations, resolution_time, response_team, response_time, response_actions, affected_population, affected_infrastructure, law_enforcement_agency, law_enforcement_contact, weather_conditions, traffic_conditions',
         Weather: 'record_id, type, description, status, event_id, event_date, event_location, latitude, longitude, severity_level, temperature, humidity, wind_speed, wind_direction, precipitation, visibility, pressure, weather_conditions, reported_by, report_date, evacuations, power_outages, road_closures, damage_estimate, forecast_accuracy, resolution_time, response_team, response_time, response_actions, fire_department_name, fire_department_contact, affected_population, affected_infrastructure, alert_source, alert_issued_time, alert_expiry_time',
         Operations: 'record_id, type, description, status, event_id, event_date, event_location, latitude, longitude, severity_level, reported_by, report_date, utility_company, utility_company_contact, affected_population, affected_infrastructure, service_disruption, duration, estimated_repair_time, outage_area, backup_services, cause, resolution_time, response_team, response_time, response_actions, impact_level, impact_financial, impact_environmental, weather_conditions',

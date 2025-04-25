@@ -1,15 +1,15 @@
-import * as liveAlert from './liveAlert.js';
-import * as liveScan from './liveScan.js';
+import * as alert from './alert.js';
+import * as scan from './scan.js';
 
 
 class PayloadContext {
     constructor(path) {
         switch (path) {
-            case 'LiveScan':
-                this.strategy = new liveScan.Strategy();
+            case 'Scan':
+                this.strategy = new scan.Strategy();
                 break;
-            case 'LiveAlert':
-                this.strategy = new liveAlert.Strategy();
+            case 'Alert':
+                this.strategy = new alert.Strategy();
                 break;
             default:
                 throw new Error('Unknown path');

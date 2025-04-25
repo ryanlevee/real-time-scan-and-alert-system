@@ -13,8 +13,8 @@ app.use(bookend.Begin.prog);
 app.use(express.json());
 app.use(extend.middleware);
 
-app.use('/livescan', routes.liveScan);
-app.use('/livealert', routes.liveAlert);
+app.use('/scan', routes.scan);
+app.use('/alert', routes.alert);
 
 app.use(extend.errors);
 app.use(bookend.End.prog);

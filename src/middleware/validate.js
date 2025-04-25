@@ -13,10 +13,10 @@ const validateMethod = async method => {
 
 const validatePath = async urlPath => {
     switch (urlPath) {
-        case '/livescan':
-            return 'LiveScan';
-        case '/livealert':
-            return 'LiveAlert';
+        case '/scan':
+            return 'Scan';
+        case '/alert':
+            return 'Alert';
         default:
             throw new errs.UrlPathError(urlPath);
         // extensible

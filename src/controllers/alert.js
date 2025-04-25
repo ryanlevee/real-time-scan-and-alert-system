@@ -1,10 +1,10 @@
 import { BaseController } from './base.js';
 
 
-class LiveScanController extends BaseController {
+class AlertController extends BaseController {
     constructor(req) {
         super(req);
     }
 }
 
-export { LiveScanController as Controller };
+export { AlertController as Controller };

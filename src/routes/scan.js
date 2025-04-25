@@ -1,13 +1,13 @@
 import express from 'express';
-import * as liveAlert from '../controllers/liveAlert.js';
+import * as scan from '../controllers/scan.js';
 import * as errs from '../errors/index.js';
 import { DataHolder } from '../storage/holders.js';
 
 
-const liveAlertRouter = express.Router();
+const scanRouter = express.Router();
 
-liveAlertRouter.post('/', async (req, res, next) => {
-    const controller = new liveAlert.Controller();
+scanRouter.post('/', async (req, res, next) => {
+    const controller = new scan.Controller();
 
     try {
         await controller.process();
@@ -23,4 +23,4 @@ liveAlertRouter.post('/', async (req, res, next) => {
     }
 });
 
-export { liveAlertRouter };
+export { scanRouter };

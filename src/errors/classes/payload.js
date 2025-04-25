@@ -1,7 +1,7 @@
 import { ControllerError } from "./controllers.js";
 
 
-class UnhandledLiveAlertTypeError extends ControllerError {
+class UnhandledAlertTypeError extends ControllerError {
     constructor(arg, obj) {
         super();
         this.arg = arg;
@@ -20,5 +20,5 @@ class UnhandledLiveAlertTypeError extends ControllerError {
 }
 
 export {
-    UnhandledLiveAlertTypeError
+    UnhandledAlertTypeError
 };

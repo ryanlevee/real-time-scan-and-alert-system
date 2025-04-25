@@ -10,7 +10,7 @@ const log = [
     errs.middleware.UrlPathError.name,
     errs.middleware.EmptyError.name,
     errs.middleware.JsonError.name,
-    errs.payload.UnhandledLiveAlertTypeError.name,
+    errs.payload.UnhandledAlertTypeError.name,
 ];
 
 export { allow, log };

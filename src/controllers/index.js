@@ -1,3 +1,3 @@
-export { LiveAlertController as LiveAlert } from "./liveAlert";
-export { LiveScanController as LiveScan } from "./liveScan";
+export { AlertController as Alert } from "./alert";
+export { ScanController as Scan } from "./scan";
 

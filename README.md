@@ -40,7 +40,7 @@ Features
 *   **Modular Architecture**: Organized code structure for maintainability and scalability.
 *   **Comprehensive Logging**: Detailed logging for tracking and debugging.
 *   **Email Notifications**: Sends notifications for critical errors.
-*   **Strategy Pattern Implementation**: Uses the Strategy Pattern to handle different types of payloads for `LiveScan` and `LiveAlert`.
+*   **Strategy Pattern Implementation**: Uses the Strategy Pattern to handle different types of payloads for `Scan` and `Alert`.
 
 Technical Details
 -----------------
@@ -67,18 +67,18 @@ The project leverages several Object-Oriented Programming (OOP) design patterns 
 
 1.  **Strategy Pattern**:
     
-    *   **Usage**: Different strategies are implemented for handling `LiveScan` and `LiveAlert` payloads. The `PayloadContext` class dynamically selects the appropriate strategy based on the path.
-    *   **Example**: `LiveScanStrategy` and `LiveAlertStrategy` classes implement specific logic for handling their respective payloads.
+    *   **Usage**: Different strategies are implemented for handling `Scan` and `Alert` payloads. The `PayloadContext` class dynamically selects the appropriate strategy based on the path.
+    *   **Example**: `ScanStrategy` and `AlertStrategy` classes implement specific logic for handling their respective payloads.
 
 2.  **Factory Pattern**:
     
     *   **Usage**: The `PayloadContext` class acts as a factory to instantiate the appropriate strategy based on the path.
-    *   **Example**: The constructor of `PayloadContext` selects and initializes the correct strategy (`LiveScanStrategy` or `LiveAlertStrategy`).
+    *   **Example**: The constructor of `PayloadContext` selects and initializes the correct strategy (`ScanStrategy` or `AlertStrategy`).
 
 3.  **Template Method Pattern**:
     
     *   **Usage**: The `PayloadStrategy` base class defines the skeleton of the payload processing algorithm, deferring specific steps to subclasses.
-    *   **Example**: Methods like `getFieldList`, `navigateFields`, and `addDataToObj` are defined in `PayloadStrategy` and implemented in `LiveScanStrategy` and `LiveAlertStrategy`.
+    *   **Example**: Methods like `getFieldList`, `navigateFields`, and `addDataToObj` are defined in `PayloadStrategy` and implemented in `ScanStrategy` and `AlertStrategy`.
 
 4.  **Chain of Responsibility Pattern**:
     
@@ -143,8 +143,8 @@ The project is organized into the following files and directories:
     *   `schemas.js`
 *   `src/routes/`: API routes.
     *   `index.js`
-    *   `liveAlert.js`
-    *   `liveScan.js`
+    *   `alert.js`
+    *   `scan.js`
 *   `src/services/`: Services for processing data.
     *   `geocode.js`
     *   `index.js`
@@ -153,8 +153,8 @@ The project is organized into the following files and directories:
     *   `strategies/`
         *   `context.js`
         *   `index.js`
-        *   `liveAlert.js`
-        *   `liveScan.js`
+        *   `alert.js`
+        *   `scan.js`
         *   `payload.js`
 *   `src/storage/`: Data storage and management.
     *   `holders.js`

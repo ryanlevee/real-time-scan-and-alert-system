@@ -1,2 +1,2 @@
-export { liveScanRouter as liveScan } from './liveScan.js';
-export { liveAlertRouter as liveAlert } from './liveAlert.js';
+export { scanRouter as scan } from './scan.js';
+export { alertRouter as alert } from './alert.js';
