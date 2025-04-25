@@ -1,6 +1,10 @@
 Real-Time Scan and Alert System
 ===============================
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**Related Project:** This project complements the "Alert System UI" frontend: [Alert System UI (GitHub)](https://github.com/ryanlevee/alert-system-ui)
+
 Overview
 --------
 
@@ -296,12 +300,11 @@ Credits
 
 This project includes code for geocoding from OpenStreetMap.
 
-Author
-------
 
-Your Name
+## License
 
-License
--------
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/ryanlevee/real-time-scan-and-alert-system/blob/main/LICENSE) file for details.
 
-This project is licensed under the GNU General Public License. See the `LICENSE` file for details.
+## Contact
+
+Ryan Levee - [GitHub](https://github.com/ryanlevee) | [LinkedIn](https://www.linkedin.com/in/ryanlevee/) | [Email](mailto:ryanlevee@gmail.com)
